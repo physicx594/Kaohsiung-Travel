@@ -1,0 +1,200 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 間隔 */
+.bg{
+	position: relative;
+	margin: 0 auto;
+	// width: 1024px;
+	height: 380px;
+	background: url(../images/FileAttPic2.jpg) no-repeat center center;
+	background-size: cover;
+	color: white;
+	.header{
+		position: absolute;
+		top: 89px;
+		.title{
+			color: #ffc107;
+			font-size: 36px;
+			text-align: center;
+			margin-bottom: 96px;
+		}
+		select{
+			padding: 10px;
+			color: black;
+			width: 452px;
+			height: 48px;
+			background-color: rgba(255, 255, 255, 0.7);
+		}
+	}
+}
+.hotLocation{
+	width: 800px;
+	height: 112px;
+	padding: 10px;
+	background-color: white;
+	border-radius: 6px;
+	border: 1px solid rgba(255, 255, 255, 0.7);
+	box-shadow: 0 0 5px 1px rgba(157, 156, 156, 0.7);
+	margin-top: 352px;
+	p{
+		color: black;
+	}
+	ul{
+		display: flex;
+		justify-content: space-around;
+		margin-top: 20px;
+		li{
+			padding: 10px 15px;
+			border-radius: 6px;
+			box-shadow: 0 0 5px 1px rgba(157, 156, 156, 0.7);
+			color: white;
+			font-weight: bold;
+			line-height: 16px;
+			&:hover{
+				color: white;
+			}
+		}
+		.btn:active{
+			color: white;
+
+		}
+	}
+
+}
+.content{
+	margin-top: 150px;
+	.location{
+		color: rgb(255,193,7);
+		font-size: 36px;
+		font-weight: bold;
+		margin-bottom: 24px;
+	}
+	ul{
+		padding: 0 40px;
+		display: flex;
+		// justify-content: space-between;
+		flex-wrap: wrap;
+		li{
+			// border: 1px black solid;
+			box-shadow: 0 0 5px 1px rgba(157, 156, 156, 0.7);
+			border-radius: 6px;
+			margin: 20px 20px;
+		}
+	}
+	.contentImg{
+		width: 464px;
+		height: 155px;
+		border-radius: 6px 6px 0 0;
+		color: white;
+		font-weight: bold;
+		.name{
+			margin: 20px;
+			color: rgb(255,193,7);
+		}
+		p{
+			margin: 20px;
+		}
+	}
+	.contentBody{
+		background-color: white;
+		line-height: 35px;
+		padding: 10px;
+		width: 464px;
+		p{
+			margin: 0 10px ;
+		}
+		img{
+			width: 15px;
+		}
+	}
+}
+.pageBtn{
+    display: flex;
+    justify-content:center;
+  }
+  .pageBtn span{
+	width:30px;
+	border:1px solid;
+	margin:0 2px;
+	line-height: 30px;
+	text-align: center;
+	background-color: white;
+  }
+  .pageBtn span:hover {
+      background: #444;
+	  color: #fff;
+	  cursor: pointer;
+  }
+.footer{
+	background-color: rgb(255,193,7);
+	padding: 25px;
+	height: 90px;
+	text-align: center;
+}
+.scrollTop{
+	width: 25px;
+	height: 30px;
+	background-color: transparent;
+	color: #ffc107;
+	border: 2px solid #ffc107;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	text-align: center;
+	line-height: 26px;
+	&:hover {
+		cursor: pointer;
+		transition: all 0.5s ease;
+		background-color: #ffc107;
+		color: #000000;
+		border: 2px solid #000000;
+	  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap-4.4.1-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="scss/all.css" />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous"
+    />
+  </head>
+  <body style="background: rgb(242, 242, 242);">
+    <div class="container">
+      <div class="bg d-flex justify-content-center">
+        <div class="header">
+          <div class="title">
+            <p>高雄旅遊資訊</p>
+          </div>
+          <select class="form-control form-control-lg selection"> </select>
+        </div>
+        <div class="hotLocation">
+          <p class="font-weight-bold">熱門行政區域</p>
+          <ul>
+            <li class="btn-success btn">苓雅區</li>
+            <li class="btn-danger btn">三民區</li>
+            <li class="btn-warning btn">前鎮區</li>
+            <li class="btn-info btn">大樹區</li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <div class="location text-center">全部資料</div>
+        <ul class="list"></ul>
+      </div>
+      <div class="pageBtn"></div>
+      <div class="footer mt-5">
+        <p class="mb-2">僅做為練習用</p>
+        <p>資料來源:高雄市政府</p>
+      </div>
+      <div class="scrollTop"><i class="fas fa-angle-double-up"></i></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" 			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 			  crossorigin="anonymous"></script>
+    <script src="js/all.js"></script>
+    <script>
+
+      $(window).scroll(){
+        console.log(window.scroll)
+      }
+    </script>
+  </body>
+</html>

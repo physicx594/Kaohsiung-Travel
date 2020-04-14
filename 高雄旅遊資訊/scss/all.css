@@ -1,0 +1,240 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 間隔 */
+.bg {
+  position: relative;
+  margin: 0 auto;
+  height: 380px;
+  background: url(../images/FileAttPic2.jpg) no-repeat center center;
+  background-size: cover;
+  color: white;
+}
+
+.bg .header {
+  position: absolute;
+  top: 89px;
+}
+
+.bg .header .title {
+  color: #ffc107;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 96px;
+}
+
+.bg .header select {
+  padding: 10px;
+  color: black;
+  width: 452px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.hotLocation {
+  width: 800px;
+  height: 112px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: 0 0 5px 1px rgba(157, 156, 156, 0.7);
+          box-shadow: 0 0 5px 1px rgba(157, 156, 156, 0.7);
+  margin-top: 352px;
+}
+
+.hotLocation p {
+  color: black;
+}
+
+.hotLocation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 20px;
+}
+
+.hotLocation ul li {
+  padding: 10px 15px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 0 5px 1px rgba(157, 156, 156, 0.7);
+          box-shadow: 0 0 5px 1px rgba(157, 156, 156, 0.7);
+  color: white;
+  font-weight: bold;
+  line-height: 16px;
+}
+
+.hotLocation ul li:hover {
+  color: white;
+}
+
+.hotLocation ul .btn:active {
+  color: white;
+}
+
+.content {
+  margin-top: 150px;
+}
+
+.content .location {
+  color: #ffc107;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.content ul {
+  padding: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content ul li {
+  -webkit-box-shadow: 0 0 5px 1px rgba(157, 156, 156, 0.7);
+          box-shadow: 0 0 5px 1px rgba(157, 156, 156, 0.7);
+  border-radius: 6px;
+  margin: 20px 20px;
+}
+
+.content .contentImg {
+  width: 464px;
+  height: 155px;
+  border-radius: 6px 6px 0 0;
+  color: white;
+  font-weight: bold;
+}
+
+.content .contentImg .name {
+  margin: 20px;
+  color: #ffc107;
+}
+
+.content .contentImg p {
+  margin: 20px;
+}
+
+.content .contentBody {
+  background-color: white;
+  line-height: 35px;
+  padding: 10px;
+  width: 464px;
+}
+
+.content .contentBody p {
+  margin: 0 10px;
+}
+
+.content .contentBody img {
+  width: 15px;
+}
+
+.pageBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pageBtn span {
+  width: 30px;
+  border: 1px solid;
+  margin: 0 2px;
+  line-height: 30px;
+  text-align: center;
+  background-color: white;
+}
+
+.pageBtn span:hover {
+  background: #444;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #ffc107;
+  padding: 25px;
+  height: 90px;
+  text-align: center;
+}
+
+.scrollTop {
+  width: 25px;
+  height: 30px;
+  background-color: transparent;
+  color: #ffc107;
+  border: 2px solid #ffc107;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  text-align: center;
+  line-height: 26px;
+}
+
+.scrollTop:hover {
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: #ffc107;
+  color: #000000;
+  border: 2px solid #000000;
+}
+/*# sourceMappingURL=all.css.map */
