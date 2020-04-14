@@ -1,6 +1,7 @@
 # 高雄旅遊資訊
 ##### 前端 API 
 ![image](https://img.shields.io/badge/exercise-JavaScript-FFC800.svg) ![image](https://img.shields.io/badge/exercise-jQuery-1D85FE.svg) ![image](https://img.shields.io/badge/exercise-RWD-FF6C0F.svg) ![image](https://img.shields.io/badge/exercise-SCSS-E6097D.svg)
+
 ***
 <img src="https://github.com/physicx594/Kaohsiung-Travel/blob/master/readme_IMG.png"  width=500  />
 
