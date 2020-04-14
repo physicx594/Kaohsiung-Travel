@@ -31,7 +31,6 @@ function xhrData(){
       let selectZoneData = data[i].Zone
       selectList.push(selectZoneData) 
     }
-
     //篩選重複
     let selectFilter= {}
     selectList.forEach(function(value){
