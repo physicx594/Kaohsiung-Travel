@@ -73,7 +73,7 @@ function xhrData(){
 
       let contentTitle = `<span>全部區域</span>`
       document.querySelector('.location').innerHTML = contentTitle
-      let items = 10
+      let items = 6
       let pageStart = (page-1) * items
       let pageEnd = page * items
       let str= ''
