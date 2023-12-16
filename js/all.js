@@ -1,6 +1,6 @@
 //連線
 let xhr = new XMLHttpRequest();
-xhr.open('get','https://data.kcg.gov.tw/api/action/datastore_search?resource_id=92290ee5-6e61-456f-80c0-249eae2fcc97',true)
+xhr.open('get','https://raw.githubusercontent.com/hexschool/KCGTravel/master/datastore_search.json',true)
 xhr.send(null)
 xhr.onload = function(){
   if(xhr.readyState == 4 && xhr.status == 200){
